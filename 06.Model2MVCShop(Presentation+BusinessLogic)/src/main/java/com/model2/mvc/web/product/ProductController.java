@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.model2.mvc.common.Page;
@@ -47,7 +48,7 @@ public class ProductController {
 		System.out.println("/addProduct");
 		
 		String temDir = 
-				"C:\\workspace\\06.Model2MVCShop(Presentation+BusinessLogic)\\WebContent\\images\\uploadFiles\\";
+				"C:\\Users\\USER\\git\\06Model2MVCShop-Presentation-BusinessLogic-\\06.Model2MVCShop(Presentation+BusinessLogic)\\WebContent\\images\\uploadFiles";
 		
 		String manuDate = product.getManuDate();
 		manuDate = manuDate.replaceAll("-", "");
