@@ -45,7 +45,8 @@ public class ProductController {
 	public String addProduct(@RequestParam(value="file", required=false) MultipartFile imgFile,
 								@ModelAttribute("pvo") Product product) throws Exception {
 		
-		System.out.println("/addProduct");
+		System.out.println("imgFile.getOriginalFilename()  :: " + imgFile.getOriginalFilename());
+		System.out.println("Product :: " + product);
 		
 		String temDir = 
 				"C:\\Users\\USER\\git\\06Model2MVCShop-Presentation-BusinessLogic-\\06.Model2MVCShop(Presentation+BusinessLogic)\\WebContent\\images\\uploadFiles";
